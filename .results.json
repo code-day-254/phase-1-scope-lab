@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 5,
+    "passes": 1,
+    "pending": 0,
+    "failures": 4,
+    "start": "2023-04-02T09:14:56.084Z",
+    "end": "2023-04-02T09:14:57.064Z",
+    "duration": 980
+  },
+  "tests": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'bob'",
+        "showDiff": true,
+        "expected": "bob",
+        "stack": "AssertionError: expected undefined to equal 'bob'\n    at Context.<anonymous> (test/indexTest.js:4:38)\n    at process.processImmediate (node:internal/timers:475:21)"
+      }
+    },
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'bob'",
+        "showDiff": true,
+        "expected": "bob",
+        "stack": "AssertionError: expected undefined to equal 'bob'\n    at Context.<anonymous> (test/indexTest.js:10:38)\n    at process.processImmediate (node:internal/timers:475:21)"
+      }
+    },
+    {
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: overwriteBestCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:29:7)\n    at process.processImmediate (node:internal/timers:475:21)",
+        "message": "overwriteBestCustomer is not defined"
+      }
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [Function: changeLeastFavoriteCustomer] to throw error including 'Assignment to constant variable.' but got 'Cannot access \\'leastFavoriteCustomer\\' before initialization'",
+        "showDiff": true,
+        "actual": "Cannot access 'leastFavoriteCustomer' before initialization",
+        "expected": "Assignment to constant variable.",
+        "stack": "AssertionError: expected [Function: changeLeastFavoriteCustomer] to throw error including 'Assignment to constant variable.' but got 'Cannot access \\'leastFavoriteCustomer\\' before initialization'\n    at Context.<anonymous> (test/indexTest.js:37:51)\n    at process.processImmediate (node:internal/timers:475:21)"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'bob'",
+        "showDiff": true,
+        "expected": "bob",
+        "stack": "AssertionError: expected undefined to equal 'bob'\n    at Context.<anonymous> (test/indexTest.js:4:38)\n    at process.processImmediate (node:internal/timers:475:21)"
+      }
+    },
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'bob'",
+        "showDiff": true,
+        "expected": "bob",
+        "stack": "AssertionError: expected undefined to equal 'bob'\n    at Context.<anonymous> (test/indexTest.js:10:38)\n    at process.processImmediate (node:internal/timers:475:21)"
+      }
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: overwriteBestCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:29:7)\n    at process.processImmediate (node:internal/timers:475:21)",
+        "message": "overwriteBestCustomer is not defined"
+      }
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [Function: changeLeastFavoriteCustomer] to throw error including 'Assignment to constant variable.' but got 'Cannot access \\'leastFavoriteCustomer\\' before initialization'",
+        "showDiff": true,
+        "actual": "Cannot access 'leastFavoriteCustomer' before initialization",
+        "expected": "Assignment to constant variable.",
+        "stack": "AssertionError: expected [Function: changeLeastFavoriteCustomer] to throw error including 'Assignment to constant variable.' but got 'Cannot access \\'leastFavoriteCustomer\\' before initialization'\n    at Context.<anonymous> (test/indexTest.js:37:51)\n    at process.processImmediate (node:internal/timers:475:21)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
